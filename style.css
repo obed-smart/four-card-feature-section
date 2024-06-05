@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    /* ### Primary */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* ### Neutral */
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    /* ### Fonts */
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    ;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100vh;
+
+    background-color: var(--Very-Light-Gray);
+}
+
+header {
+    max-width: 45%;
+
+    padding: 40px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header h1:first-of-type {
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+}
+
+header h1:last-of-type {
+    color: var(--Very-Dark-Blue);
+}
+
+header p {
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sub-main {
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-item {
+    width: 320px;
+    height: 200px;
+
+    border-radius: 5px;
+    padding: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.flex-item h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.flex-item p {
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+
+}
+
+.flex-item img {
+    width: 50px;
+    height: 50px;
+
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.Supervisor {
+    border-top: 3px solid var(--Cyan);
+}
+
+.team-builder {
+    border-top: 3px solid var(--Red);
+}
+
+.Karma {
+    border-top: 3px solid var(--Orange);
+}
+
+.Calculator {
+    border-top: 3px solid var(--Blue);
+}
+
+/* for tablet responsive */
+
+@media (max-width:900px) {
+
+    header {
+        max-width: 90%;
+    
+    }
+
+    header h1:first-of-type {
+        font-size: 30px;
+    }
+    
+    header h1:last-of-type {
+        font-size: 35px;
+    }
+    
+    header p {
+     
+        font-size: 23px;
+    }
+    
+
+
+    main{
+        flex-direction: column; 
+        padding-bottom: 50px ;
+    }
+
+    .flex-item {
+        width: 630px;
+        height: 300px;
+        padding: 10px 30px;
+    
+    }
+
+    .flex-item h1 {
+        font-size: 30px;
+    }
+    
+    .flex-item p {
+        font-size: 23px;
+    }
+
+    .flex-item img {
+        width: 60px;
+        height: 60px;
+    
+        margin-left: auto;
+        margin-top: 70px;
+    }
+}
+
+/* foe mobile responsive */
+
+@media (max-width:600px) {
+
+    .container {
+        max-width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    header {
+        max-width: 100%;
+        padding: 30px 10px;
+    }
+
+    main{
+        flex-direction: column; 
+    }
+
+}
