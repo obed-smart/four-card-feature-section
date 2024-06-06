@@ -67,7 +67,7 @@ header {
 
 header h1:first-of-type {
     color: var(--Grayish-Blue);
-    font-weight: 200;
+    font-weight: 400;
 }
 
 header h1:last-of-type {
@@ -126,19 +126,19 @@ main {
 }
 
 .Supervisor {
-    border-top: 3px solid var(--Cyan);
+    border-top: 4px solid var(--Cyan);
 }
 
 .team-builder {
-    border-top: 3px solid var(--Red);
+    border-top: 4px solid var(--Red);
 }
 
 .Karma {
-    border-top: 3px solid var(--Orange);
+    border-top: 4px solid var(--Orange);
 }
 
 .Calculator {
-    border-top: 3px solid var(--Blue);
+    border-top: 4px solid var(--Blue);
 }
 
 /* for tablet responsive */
@@ -199,18 +199,56 @@ main {
 @media (max-width:600px) {
 
     .container {
-        max-width: 100%;
+        width: 100%;
         height: auto;
-        padding: 30px;
+
     }
 
     header {
-        max-width: 100%;
+        width: 100%;
         padding: 30px 10px;
+
     }
 
+    
+    header h1:first-of-type {
+        font-size: 23px;
+
+    }
+    
+    header h1:last-of-type {
+        font-size: 23px;
+    }
+    
+    header p {
+     
+        font-size: 15px;
+    }
     main{
         flex-direction: column; 
+    }
+
+    .flex-item {
+        width: 320px;
+        height: 200px;
+        padding: 10px 30px;
+    
+    }
+
+    .flex-item h1 {
+        font-size: 25px;
+    }
+
+    .flex-item p {
+        font-size: 15px;
+    }
+
+    .flex-item img {
+        width: 40px;
+        height: 40px;
+    
+        margin-left: auto;
+        margin-top: 30px;
     }
 
 }
